@@ -1,0 +1,75 @@
+@import "../layout.scss";
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+}
+.aboutMe {
+  width: 90%;
+  text-align: left;
+  color: $highlight;
+  @include open-sans-25-semi-bold;
+  margin-left: 60px;
+  padding-bottom: 15px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 149px;
+    background-color: $highlight;
+    left: 195px;
+    top: 48px;
+  }
+}
+.aboutMeEmphasis1 {
+  color: $black;
+  @include open-sans-25-semi-bold;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: $highlight;
+    bottom: 0px;
+    left: 0px;
+  }
+  .textDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}
+.toptexttemplete {
+  padding: 0 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textsidelinetemplete {
+  padding: 0 0 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.amASelfTaughtWebDeveloperIHaveO {
+  max-width: 706px;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: normal;
+  color: $black;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

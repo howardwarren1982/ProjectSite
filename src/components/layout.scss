@@ -1,0 +1,318 @@
+/*-------------------------- */
+/*Style Guide*/
+/*-------------------------- */
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --highlight: rgba(56, 158, 66, 1);
+  --cardcolor: rgba(255, 255, 255, 1);
+
+  --font-size-xxs: 15px;
+  --font-size-xs: 15.1px;
+  --font-size-s: 15.5px;
+  --font-size-m: 16px;
+  --font-size-l: 19.4px;
+  --font-size-xxxl: 25px;
+  --font-size-xxxxl: 50px;
+  --font-size-xl2: 20px;
+  --font-size-xxl2: 24.2px;
+
+  --font-family-faustina: "Faustina";
+  --font-family-open_sans: "Open Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // font-family: ;
+  // font-size: ;
+  // font-weight: ;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body,
+section {
+  overflow-x: hidden;
+}
+
+* button,
+* a {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/*-------------------------- */
+/*Can be used on any project*/
+/*-------------------------- */
+.full-height {
+  height: 100vh;
+}
+
+.myrow {
+  max-width: 1500px;
+  margin: 0 auto 0 auto;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.even-columns {
+  display: flex;
+}
+.even-columns > * {
+  width: 100%;
+}
+
+section {
+  padding: 10px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-rev-col {
+  display: flex;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+  /*Reusable*/
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-rev-col {
+    flex-direction: column-reverse;
+  }
+}
+
+// Mixins
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+@mixin for-any-size($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+/*-------------------------- */
+/*Anima Code*/
+/*-------------------------- */
+
+.opensans-semi-bold-white-25px-2 {
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-normal-black-15px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxs);
+  font-weight: 400;
+  font-style: normal;
+}
+.opensans-semi-bold-black-24-2px2 {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxl2);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-semi-bold-white-23-6px {
+  color: var(--cardcolor);
+  font-family: var(--font-family-open_sans);
+  font-size: 23.55919075012207px;
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-normal-black-15-1px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  font-style: normal;
+}
+.opensans-semi-bold-white-25px {
+  color: var(--cardcolor);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xl2);
+  font-weight: 700;
+  font-style: normal;
+}
+.opensans-semi-bold-black-40px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-normal-black-15-5px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
+.opensans-semi-bold-apple-25px {
+  color: var(--highlight);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-bold-black-18-8px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: 18.847352981567383px;
+  font-weight: 700;
+  font-style: normal;
+}
+.opensans-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.opensans-bold-black-19-4px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  font-style: normal;
+}
+.opensans-semi-bold-white-24-2px-3 {
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxl2);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-bold-black-19-4px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: 19.391347885131836px;
+  font-weight: 700;
+  font-style: normal;
+}
+.opensans-semi-bold-white-24-2px2 {
+  color: var(--cardcolor);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxl2);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-semi-bold-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.faustina-semi-bold-black-50px {
+  color: var(--black);
+  font-family: var(--font-family-faustina);
+  font-size: 50px;
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-semi-bold-apple-24-2px2 {
+  color: var(--highlight);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxl2);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-semi-bold-black-50px {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.opensans-bold-black-18-8px-2 {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: 18.77811050415039px;
+  font-weight: 700;
+  font-style: normal;
+}
+.opensans-semi-bold-white-23-5px {
+  color: var(--cardcolor);
+  font-family: var(--font-family-open_sans);
+  font-size: 23.472639083862305px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+// This is the project stylesheet, overlay plugin code
+
+// Colors
+$black: rgba(0, 0, 0, 1);
+$card-color: rgba(255, 255, 255, 1);
+$highlight: rgba(57, 158, 67, 1);
+$silver: rgba(196, 196, 196, 1);
+$transparent-black: rgba(0, 0, 0, 0.07);
+
+// Typographies
+@mixin open-sans-16-regular {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin open-sans-20-bold {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin open-sans-25-semi-bold {
+  font-family: "Open Sans";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+}

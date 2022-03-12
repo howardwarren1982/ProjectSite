@@ -1,0 +1,65 @@
+.projcard {
+  max-width: 700px;
+  padding: 0px 5px;
+  background-color: #ffffff;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.project-card-subtitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.9752px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.project-card-paragraph {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.5801px;
+  line-height: 18px;
+
+  color: #000000;
+  max-width: 60ch;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.project-button {
+  background: #2b8734;
+  padding: 12px 18px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.219px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-decoration: none;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.project-card-image {
+  max-width: 680px;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  margin-bottom: 40px;
+  list-style: none;
+}
