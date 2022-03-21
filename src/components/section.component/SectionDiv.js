@@ -1,59 +1,18 @@
 import React from "react"
 import * as styles from "./Sections.module.scss"
 
-const SectionDiv = ({ children }) => {
+const SectionDiv = ({ headerhighlight, headernormal, children }) => {
   return (
     <div className={`${styles.sections} myrow `}>
-      <p className={styles.aboutMe}>
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        About
-        <strong className={styles.aboutMeEmphasis1}> Me</strong>
+      <p className={styles.content}>
+        <span style={{ visibility: `hidden` }}>-----------------------</span>{" "}
+        {headerhighlight}
+        <strong className={styles.contentEmphasis1}> {headernormal}</strong>
       </p>
       <div className={styles.textDiv}>
         <div className={styles.toptexttemplete}>
           <div className={styles.textsidelinetemplete}>
-            <p className={styles.amASelfTaughtWebDeveloperIHaveO}>{children}</p>
+            <div className={styles.inner}>{children}</div>
           </div>
         </div>
       </div>
@@ -62,6 +21,3 @@ const SectionDiv = ({ children }) => {
 }
 
 export default SectionDiv
-
-// space characters:
-// \u00A0

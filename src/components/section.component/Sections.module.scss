@@ -7,8 +7,9 @@
   justify-content: center;
   background-color: white;
   position: relative;
+  padding: 90px 0px 20px 0px;
 }
-.aboutMe {
+.content {
   width: 90%;
   text-align: left;
   color: $highlight;
@@ -27,7 +28,12 @@
     top: 48px;
   }
 }
-.aboutMeEmphasis1 {
+
+.contentEmphasis1 {
+  @include translate(0px, 0px);
+}
+
+.contentEmphasis1 {
   color: $black;
   @include open-sans-25-semi-bold;
   &::before {
@@ -62,7 +68,7 @@
   justify-content: center;
 }
 
-.amASelfTaughtWebDeveloperIHaveO {
+.inner {
   max-width: 706px;
   font-family: "Open Sans";
   font-size: 21px;
@@ -72,4 +78,51 @@
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@include for-any-size(1480px) {
+  .content {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+
+    &::before {
+      display: none;
+    }
+    span {
+      display: none;
+    }
+  }
+
+  .toptexttemplete {
+    padding: 0 0px;
+  }
+  .sections {
+    display: block;
+  }
+
+  .inner {
+    max-width: 706px;
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+    padding: 30px 5px 30px 5px;
+  }
+
+  .contentEmphasis1 {
+    color: $black;
+    @include open-sans-25-semi-bold;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 90%;
+      height: 2px;
+      background-color: $highlight;
+      bottom: 0px;
+      left: 5%;
+      right: 5%;
+    }
+  }
 }

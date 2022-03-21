@@ -1,9 +1,9 @@
 import React from "react"
 import "./card.style.scss"
-import { StaticImage } from "gatsby-plugin-image"
 
 export default function Projectcard({
   cardimage,
+  cardimageMobile,
   cardimagealt,
   linktocode,
   linktoproject,
@@ -12,12 +12,11 @@ export default function Projectcard({
 }) {
   return (
     <div className="projcard center">
-      <StaticImage
-        className="project-card-image"
-        src="../../images/brownHero.png"
-        alt={cardimagealt}
-        width={1500}
-      />
+      <picture className="project-card-image">
+        <source media="(max-width:600px)" srcset={cardimageMobile} />
+        <img src={cardimage} alt={cardimagealt} />
+      </picture>
+
       <h4 className="project-card-subtitle">About This Project</h4>
       <p className="project-card-paragraph">{children}</p>
       <h4 className="project-card-subtitle">Skills Used</h4>
@@ -27,8 +26,16 @@ export default function Projectcard({
         ))}
       </ul>
       <div className="button-container">
-        {linktocode && <a className="project-button">See Code</a>}
-        {linktoproject && <a className="project-button">See Project</a>}
+        {linktocode && (
+          <a target="_blank" href={linktocode} className="project-button">
+            See Code
+          </a>
+        )}
+        {linktoproject && (
+          <a target="_blank" href={linktoproject} className="project-button">
+            See Project
+          </a>
+        )}
       </div>
     </div>
   )

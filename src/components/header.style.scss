@@ -2,18 +2,22 @@
 
 header {
   margin-bottom: 50px;
+  width: 1800px;
+}
+.mobile-header {
+  display: none;
 }
 
 .herotexttemp {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 0px 9px 0px 0px;
   position: relative;
-
   width: 100%;
-  height: 100%;
+  height: 750px;
+  align-self: baseline;
+  text-align: start;
 }
 
 .name-1,
@@ -23,52 +27,28 @@ header {
 }
 
 .name-1 {
-  position: static;
-  left: 0px;
-  top: 25px;
-
   font-family: "Faustina";
   font-style: normal;
   font-weight: 600;
   font-size: 115.594px;
-  line-height: 146px;
-  /* identical to box height */
-
   color: #000000;
-
   text-shadow: -11px 4px 11px rgba(0, 0, 0, 0.25);
 }
 
 .web-developer-1 {
-  position: static;
-
-  left: calc(50% - 1009.17px / 2);
-  top: calc(50% - 87px / 2 + 59.5px);
-
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 42.6667px;
-  line-height: 58px;
-
-  /* highlight */
-
   color: #2b8734;
-
   text-shadow: -11px 4px 11px rgba(0, 0, 0, 0.25);
 }
 
 .links {
-  position: static;
-  left: 398.09px;
-  top: 256px;
-
   align-items: flex-start;
-  //flex-direction: column;
   display: flex;
-  min-width: 423px;
-  padding: 0 156px;
-  margin-bottom: 464px;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .linked-inblack:hover {
@@ -80,8 +60,6 @@ header {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-left: 15px;
-  min-width: 48px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -90,19 +68,16 @@ header {
 }
 
 .linked-in {
-  background-image: url(../images/LinkedIN.png);
-  background-size: 100% 100%;
   cursor: pointer;
-  height: 48px;
   margin-top: -0.22px;
   transition: all 0.3s ease-in-out;
-  width: 48px;
 }
 
 .githubblack {
   cursor: pointer;
   margin-top: -0.22px;
   transition: all 0.3s ease-in-out;
+  width: 48px;
 }
 
 .githubblack:hover {
@@ -111,4 +86,62 @@ header {
 
 .header-div {
   background-color: white;
+}
+
+@media screen and (max-width: 1484px) {
+  .herotexttemp {
+    height: 40vw;
+    padding-right: 0px;
+  }
+
+  .web-developer-1 {
+    font-size: 2.5vw;
+  }
+
+  .name-1 {
+    font-size: 5.608vw;
+  }
+
+  .linked-in {
+    height: 2.3vw;
+    width: 2.3vw;
+  }
+
+  .githubblack {
+    width: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .desktop-setup {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .mobile-header {
+    .links {
+      display: block;
+    }
+    .name-1 {
+      font-size: 12vw;
+    }
+    .web-developer-1 {
+      font-size: 6vw;
+      margin-bottom: 10px;
+    }
+
+    .linked-in {
+      width: 6vw;
+      height: 6vw;
+    }
+
+    .githubblack {
+      width: 6vw;
+      height: 6vw;
+      margin-bottom: 1vw;
+    }
+  }
 }

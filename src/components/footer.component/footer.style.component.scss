@@ -1,0 +1,72 @@
+// Colors
+$footerBackground: #1d1a18;
+
+footer {
+  background-color: $footerBackground;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 70px 5px;
+
+  .footer__contact {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+
+  .links {
+    margin-top: 15px;
+  }
+
+  .footer__oldportfolio {
+    color: #2b8734;
+  }
+
+  .footer__email {
+    font-size: 1rem;
+  }
+}
+
+.contactside {
+  text-align: left;
+}
+
+.footer--templete {
+  gap: 255px;
+}
+
+.footer__face {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1420px) {
+  .footer__email,
+  .footer__oldportfolio {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+
+  footer {
+    .githubblack--toWhite {
+      background-color: white;
+      width: 15vw;
+    }
+
+    .linked-in {
+      width: 15vw;
+      height: 15vw;
+    }
+
+    .footer__email {
+      font-size: 0.8rem;
+    }
+  }
+
+  .footer__contact {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer--templete {
+    gap: 50px;
+  }
+}
