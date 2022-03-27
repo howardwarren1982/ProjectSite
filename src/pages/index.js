@@ -25,15 +25,6 @@ const IndexPage = () => (
         website templates. I am always learning and improving. Please see some
         of my projects below.
       </p>
-      <ul className="project-card-paragraph" style={{ listStyle: "none" }}>
-        <lh>
-          {" "}
-          <b>Udemy courses</b>{" "}
-        </lh>
-        <li>1) Build Responsive Real-World Websites with HTML and CSS</li>
-        <li>2) The Complete JavaScript Course 2021: From Zero to Expert!</li>
-        <li>3) Build Responsive Real-World Websites with HTML and CSS</li>
-      </ul>
     </SectionDiv>
 
     <SectionDiv headerhighlight={`My`} headernormal={`Projects`}>
@@ -74,10 +65,10 @@ const IndexPage = () => (
           "GIT (version control)",
         ]}
       >
-        Translated a static design to HTML, CSS and JavaScript. Paid great
-        attention to detail in order to match the design as closely as possible.
-        Wrote the code with readability and reuse in mind. I broke my SCSS up
-        into compartmentalized files. The PSD can be found:{" "}
+        Translated a static design to HTML, CSS and JavaScript. Made sure to pay
+        close attention to detail in order to match the design as accurately as
+        possible. Wrote the HTML and SCSS with readability and reuse in mind. I
+        broke my SCSS up into compartmentalized files. The PSD can be found:{" "}
         <a
           target="_blank"
           href="https://www.behance.net/gallery/123744891/AXIT-UI-Website-Design?tracking_source=search_projects_recommended%7Caxit%20uric"
@@ -102,8 +93,7 @@ const IndexPage = () => (
         ]}
       >
         Translated a static design to HTML, CSS and JS. This is an old project
-        that I updated using Gatsby. In the footer you can find a link to my old
-        portfolio. The PSD can be found:{" "}
+        that I updated using Gatsby. The PSD can be found:{" "}
         <a
           target="_blank"
           href="https://www.behance.net/gallery/31522763/UNIQUE-TECH-Website-UI-Freebie-"

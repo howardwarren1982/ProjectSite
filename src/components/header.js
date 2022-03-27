@@ -15,7 +15,7 @@ const Header = () => (
             position: "absolute",
           }}
           src="../images/newbrownHero.png"
-          alt="code in background and picture of Howard Warren in a circle"
+          alt="computers with brown walls in the background"
           transformOptions={{ fit: "cover" }}
         />
         <div class="name-1 center faustina-semi-bold-black-50px">
