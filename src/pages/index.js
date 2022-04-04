@@ -14,6 +14,12 @@ import proj2mobilepic from "./../images/projectPics/proj2/Project2Mobile.png"
 import proj3pic from "./../images/projectPics/proj3/Project3.png"
 import proj3mobilepic from "./../images/projectPics/proj3/Project3Mobile.png"
 
+import jackets from "./../images/projectPics/udemyProj1/jackets.png"
+
+import monster from "./../images/projectPics/udemyProj2/monsterApp.png"
+
+import omniFood from "./../images/projectPics/udemyProj3/omniFoodApp.jpg"
+
 import Seo from "../components/seo"
 
 const IndexPage = () => (
@@ -28,6 +34,31 @@ const IndexPage = () => (
     </SectionDiv>
 
     <SectionDiv headerhighlight={`My`} headernormal={`Projects`}>
+      <Projectcard
+        cardimage={proj3pic}
+        cardimageMobile={proj3mobilepic}
+        cardimagealt="picture of project hero image"
+        linktocode="https://github.com/howardwarren1982/gatsbyUniqueTechTheme"
+        linktoproject="https://howardwarren1982.github.io/gatsbyUniqueTechTheme/"
+        skilllist={[
+          "React (Gatsby)",
+          "React Bootstrap",
+          "Adobe XD",
+          "SCSS",
+          "Flexbox",
+          "Responsive website",
+          "GIT (version control)",
+        ]}
+      >
+        Translated a static design to HTML, CSS and JS. This is an old project
+        that I updated using Gatsby. The PSD can be found:{" "}
+        <a
+          target="_blank"
+          href="https://www.behance.net/gallery/31522763/UNIQUE-TECH-Website-UI-Freebie-"
+        >
+          Here
+        </a>
+      </Projectcard>
       <Projectcard
         cardimage={proj1pic}
         cardimageMobile={proj1mobilepic}
@@ -76,30 +107,45 @@ const IndexPage = () => (
           Here
         </a>
       </Projectcard>
+    </SectionDiv>
+
+    <SectionDiv headerhighlight={`Udemy`} headernormal={`Projects`}>
       <Projectcard
-        cardimage={proj3pic}
-        cardimageMobile={proj3mobilepic}
+        cardimage={jackets}
         cardimagealt="picture of project hero image"
-        linktocode="https://github.com/howardwarren1982/gatsbyUniqueTechTheme"
-        linktoproject="https://howardwarren1982.github.io/gatsbyUniqueTechTheme/"
+        linktocode="https://github.com/howardwarren1982/crwn-clothingUdemyProject"
         skilllist={[
-          "React (Gatsby)",
-          "React Bootstrap",
-          "Adobe XD",
-          "SCSS",
-          "Flexbox",
+          "React",
+          "Redux",
+          "Firebase",
+          "HTML, CSS",
+          "Application design",
           "Responsive website",
           "GIT (version control)",
         ]}
       >
-        Translated a static design to HTML, CSS and JS. This is an old project
-        that I updated using Gatsby. The PSD can be found:{" "}
-        <a
-          target="_blank"
-          href="https://www.behance.net/gallery/31522763/UNIQUE-TECH-Website-UI-Freebie-"
-        >
-          Here
-        </a>
+        This is still an ongoing udemy project. In this assignment we are
+        learning how to build a modern-day e-commerce website using React. So
+        far I have learned how to implement firebase into a project and redux to
+        manage global state.
+      </Projectcard>
+
+      <Projectcard
+        cardimage={monster}
+        cardimagealt="picture of project hero image"
+        linktocode="https://github.com/howardwarren1982/UdemyReactProjectOne"
+        linktoproject="https://howardwarren1982.github.io/UdemyReactProjectOne/"
+        skilllist={[
+          "React",
+          "Search",
+          "HTML, CSS",
+          "Map and Filter array functions",
+          "GIT (version control)",
+        ]}
+      >
+        This is the starter project for the udemy course, "complete react
+        developer". Building a basic react app. It's a monster's Rolodex with a
+        search feature.
       </Projectcard>
     </SectionDiv>
   </Layout>
