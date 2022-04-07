@@ -50,8 +50,10 @@ const IndexPage = () => (
           "GIT (version control)",
         ]}
       >
-        Translated a static design to HTML, CSS and JS. This is an old project
-        that I updated using Gatsby. The PSD can be found:{" "}
+        Translated a static design to HTML and CSS. Later I turned this design
+        into a Gatsby template. This makes it easier for me to use the code in
+        other projects. Gatsby also offers many great features to improve the
+        site. The PSD can be found:{" "}
         <a
           target="_blank"
           href="https://www.behance.net/gallery/31522763/UNIQUE-TECH-Website-UI-Freebie-"
@@ -124,10 +126,10 @@ const IndexPage = () => (
           "GIT (version control)",
         ]}
       >
-        This is still an ongoing udemy project. In this assignment we are
-        learning how to build a modern-day e-commerce website using React. So
-        far I have learned how to implement firebase into a project and redux to
-        manage global state.
+        This is an ongoing project (the name of the course "complete react
+        developer"). In this assignment we are learning how to build a
+        modern-day e-commerce website using React. So far I have learned how to
+        implement Firebase into a project and Redux to manage global state.
       </Projectcard>
 
       <Projectcard
@@ -146,6 +148,25 @@ const IndexPage = () => (
         This is the starter project for the udemy course, "complete react
         developer". Building a basic react app. It's a monster's Rolodex with a
         search feature.
+      </Projectcard>
+      <Projectcard
+        cardimage={omniFood}
+        cardimagealt="picture of project hero image"
+        linktocode="https://github.com/howardwarren1982/reactPortfolio/tree/master/public/Projects/project5/omnifoodContents"
+        linktoproject="https://howardwarren1982.github.io/MainProjects/omnifoodContents/index_omni.html"
+        skilllist={[
+          "HTML, CSS and JavaScript",
+          "Animations",
+          "JQuery",
+          "Basic SEO",
+          "Responsive website",
+          "GIT (version control)",
+          "FleXbox",
+        ]}
+      >
+        While doing this project I was able to learn web design basics,
+        responsive web design, basic SEO, adding google analytics and webpage
+        optimization.
       </Projectcard>
     </SectionDiv>
   </Layout>
