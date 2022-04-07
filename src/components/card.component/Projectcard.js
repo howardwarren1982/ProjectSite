@@ -27,12 +27,22 @@ export default function Projectcard({
       </ul>
       <div className="button-container">
         {linktocode && (
-          <a target="_blank" href={linktocode} className="project-button">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={linktocode}
+            className="project-button"
+          >
             See Code
           </a>
         )}
         {linktoproject && (
-          <a target="_blank" href={linktoproject} className="project-button">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={linktoproject}
+            className="project-button"
+          >
             See Project
           </a>
         )}

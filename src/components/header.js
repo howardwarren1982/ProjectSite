@@ -25,11 +25,16 @@ const Header = () => (
           Web Developer
         </div>
         <div class="links">
-          <a target={"_blank"} href="https://github.com/howardwarren1982">
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href="https://github.com/howardwarren1982"
+          >
             <img class="githubblack" src={github} />
           </a>
           <a
             target={"_blank"}
+            rel="noreferrer"
             href="https://www.linkedin.com/in/howard-warren-a9388885/"
           >
             <div class="linked-inblack">
@@ -55,10 +60,18 @@ const Header = () => (
             Web Developer
           </div>
           <div class="links">
-            <a>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/howard-warren-a9388885/"
+            >
               <img class="githubblack" src={github} />
             </a>
-            <a>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/howard-warren-a9388885/"
+            >
               <div class="linked-inblack">
                 <img class="linked-in" src={linkin} />
               </div>

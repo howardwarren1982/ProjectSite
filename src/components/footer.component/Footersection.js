@@ -19,17 +19,23 @@ export default function Footersection() {
           <br />
           <a
             target={`_blank`}
+            rel="noreferrer"
             className="footer__oldportfolio"
             href="https://howardwarren1982.github.io/reactPortfolio/"
           >
             OLD PORTFOLIO: https://howardwarren1982.github.io/reactPortfolio/
           </a>
           <div class="links">
-            <a target={"_blank"} href="https://github.com/howardwarren1982">
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://github.com/howardwarren1982"
+            >
               <img class="githubblack githubblack--toWhite" src={github} />
             </a>
             <a
               target={"_blank"}
+              rel="noreferrer"
               href="https://www.linkedin.com/in/howard-warren-a9388885/"
             >
               <div class="linked-inblack">
