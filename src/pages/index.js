@@ -65,7 +65,7 @@ const IndexPage = () => (
         cardimage={proj1pic}
         cardimageMobile={proj1mobilepic}
         cardimagealt="picture of protfolio hero picture"
-        linktocode="#"
+        linktocode="https://github.com/howardwarren1982/ProjectSite"
         skilllist={[
           "React (Gatsby)",
           "Website design",
