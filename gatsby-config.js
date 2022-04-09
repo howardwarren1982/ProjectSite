@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Howard's Portfolio`,
-    description: `This is the portfolio of Howard.`,
+    description: `https://howardwarren1982.github.io/ProjectSite/`,
     author: `Howard Warren`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Howard's Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website

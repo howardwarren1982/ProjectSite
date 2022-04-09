@@ -30,7 +30,7 @@ const Header = () => (
             rel="noreferrer"
             href="https://github.com/howardwarren1982"
           >
-            <img class="githubblack" src={github} />
+            <img class="githubblack" src={github} alt="Github icon" />
           </a>
           <a
             target={"_blank"}
@@ -38,7 +38,7 @@ const Header = () => (
             href="https://www.linkedin.com/in/howard-warren-a9388885/"
           >
             <div class="linked-inblack">
-              <img class="linked-in" src={linkin} />
+              <img class="linked-in" src={linkin} alt="Linked-in icon" />
             </div>
           </a>
         </div>
@@ -65,7 +65,7 @@ const Header = () => (
               rel="noreferrer"
               href="https://www.linkedin.com/in/howard-warren-a9388885/"
             >
-              <img class="githubblack" src={github} />
+              <img class="githubblack" src={github} alt="Github icon" />
             </a>
             <a
               target={"_blank"}
@@ -73,7 +73,7 @@ const Header = () => (
               href="https://www.linkedin.com/in/howard-warren-a9388885/"
             >
               <div class="linked-inblack">
-                <img class="linked-in" src={linkin} />
+                <img class="linked-in" src={linkin} alt="linked-in icon" />
               </div>
             </a>
           </div>

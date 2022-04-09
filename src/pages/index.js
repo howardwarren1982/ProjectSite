@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
 import SectionDiv from "../components/section.component/SectionDiv"
 import Layout from "../components/layout"
@@ -19,8 +18,6 @@ import jackets from "./../images/projectPics/udemyProj1/jackets.png"
 import monster from "./../images/projectPics/udemyProj2/monsterApp.png"
 
 import omniFood from "./../images/projectPics/udemyProj3/omniFoodApp.jpg"
-
-import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
@@ -55,6 +52,7 @@ const IndexPage = () => (
         other projects. Gatsby also offers many great features to improve the
         site. The PSD can be found:{" "}
         <a
+          rel="noreferrer"
           target="_blank"
           href="https://www.behance.net/gallery/31522763/UNIQUE-TECH-Website-UI-Freebie-"
         >
@@ -103,6 +101,7 @@ const IndexPage = () => (
         possible. Wrote the HTML and SCSS with readability and reuse in mind. I
         broke my SCSS up into compartmentalized files. The PSD can be found:{" "}
         <a
+          rel="noreferrer"
           target="_blank"
           href="https://www.behance.net/gallery/123744891/AXIT-UI-Website-Design?tracking_source=search_projects_recommended%7Caxit%20uric"
         >

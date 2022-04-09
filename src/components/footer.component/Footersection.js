@@ -9,7 +9,7 @@ export default function Footersection() {
     <footer>
       <div className="flex-rev-col myrow center footer--templete">
         <div className="pictureside">
-          <img className="footer__face" src={face} />
+          <img className="footer__face" src={face} alt="Howard" />
           <h3>THANK YOU FOR VISITING</h3>
           <h3>FEEL FREE TO CONTACT ME</h3>
         </div>
@@ -23,7 +23,7 @@ export default function Footersection() {
             className="footer__oldportfolio"
             href="https://howardwarren1982.github.io/reactPortfolio/"
           >
-            OLD PORTFOLIO: https://howardwarren1982.github.io/reactPortfolio/
+            OLD PORTFOLIO LINK
           </a>
           <div class="links">
             <a
@@ -31,7 +31,11 @@ export default function Footersection() {
               rel="noreferrer"
               href="https://github.com/howardwarren1982"
             >
-              <img class="githubblack githubblack--toWhite" src={github} />
+              <img
+                class="githubblack githubblack--toWhite"
+                src={github}
+                alt="GitHub icon"
+              />
             </a>
             <a
               target={"_blank"}
@@ -39,7 +43,7 @@ export default function Footersection() {
               href="https://www.linkedin.com/in/howard-warren-a9388885/"
             >
               <div class="linked-inblack">
-                <img class="linked-in" src={linkin} />
+                <img class="linked-in" src={linkin} alt="Linked-in icon" />
               </div>
             </a>
           </div>

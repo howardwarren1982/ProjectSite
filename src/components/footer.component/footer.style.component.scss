@@ -46,13 +46,14 @@ footer {
 
   footer {
     .githubblack--toWhite {
-      background-color: white;
-      width: 15vw;
+      background-color: #1d1a18;
+      width: 5vw;
     }
 
     .linked-in {
-      width: 15vw;
-      height: 15vw;
+      width: 5vw;
+      height: 5vw;
+      margin-left: 5px;
     }
 
     .footer__email {
@@ -68,5 +69,26 @@ footer {
 
   .footer--templete {
     gap: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__email,
+  .footer__oldportfolio {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+
+  footer {
+    .githubblack--toWhite {
+      background-color: #1d1a18;
+      width: 10vw;
+    }
+
+    .linked-in {
+      width: 10vw;
+      height: 10vw;
+      margin-left: 5px;
+    }
   }
 }
