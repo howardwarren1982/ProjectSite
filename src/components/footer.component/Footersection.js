@@ -11,7 +11,6 @@ export default function Footersection() {
         <div className="pictureside">
           <img className="footer__face" src={face} alt="Howard" />
           <h3>THANK YOU FOR VISITING</h3>
-          <h3>FEEL FREE TO CONTACT ME</h3>
         </div>
         <div className="contactside">
           <h3 className="footer__contact">CONTACT</h3>
